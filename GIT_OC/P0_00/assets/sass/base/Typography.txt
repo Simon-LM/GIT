@@ -1,0 +1,336 @@
+
+// HEADER //
+// ohmyfood 
+font-family: 'Shrikhand';
+font-style: italic;
+font-weight: 400;
+font-size: 30px;
+color: #101010;
+
+
+
+// INPUT
+// Paris, Belleville
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #353535;
+
+
+// H1 //
+// Réservez le menu qui vous convient
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+
+
+
+// main__header__subtitle //
+// Découvrez des restaurants d’exception, sélectionnés par nos soins. 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #353535; Grey 
+
+
+// H2 //
+// Restaurants
+// Fonctionnement 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+
+
+// TEXT Fonctionnement
+// Choisissez un restaurant
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+
+
+
+
+// H3 //
+// Title FOOTER
+// ohmyfood 
+font-family: 'Shrikhand';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: #FFFFFF;
+
+
+
+// H4 //
+// Fricassée d'escargots
+// Foie gras de canard mi-cuit
+// Œuf au plat
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+
+
+// p //
+// "Description" 
+//Au piment d'Espelette 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15.0431px;
+line-height: 18px;
+color: #000000;
+
+
+// Icons Fonctionnements
+color: #7E7E7E;
+
+
+// FONT NAV FOOTER
+// Proposer un restaurant/
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF; White
+
+
+
+
+
+// CARDS MENUS RESTAURANTS
+/* Card */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+isolation: isolate;
+
+width: 349px;
+height: 69px;
+
+/* White */
+background: #FFFFFF;
+box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+border-radius: 15.0431px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* PlateAndPrice */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+padding: 15px;
+gap: 5px;
+
+width: 349px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+z-index: 0;
+
+
+/* Plate */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 5px;
+
+width: 287px;
+height: 42px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Name */
+
+width: 287px;
+height: 21px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Description */
+
+width: 287px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15.0431px;
+line-height: 18px;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Price */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 27px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 76 */
+
+width: 18px;
+height: 18px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15.0431px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #353535;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* € */
+
+width: 9px;
+height: 18px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 15.0431px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #353535;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Select button */
+
+position: absolute;
+width: 59px;
+height: 69px;
+left: 350px;
+top: 0px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 59px;
+height: 69px;
+right: -60px;
+top: 0px;
+
+/* Green */
+background: #99E2D0;
+border-radius: 0px 15px 15px 0px;
+
+
+/* Icon/Check */
+
+position: absolute;
+width: 20px;
+height: 20px;
+right: -40.58px;
+top: 24.97px;
+
+/* White */
+background: #FFFFFF;
+
+
+
+
+

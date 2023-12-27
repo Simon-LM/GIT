@@ -1,0 +1,104 @@
+/* || TYPOGRAPHY ||  */
+
+* {
+    font-family: $font-main;
+    font-size: 1rem;
+    line-height: 1.2em;  
+    margin: 0;
+    @include font_main;
+
+    h1, h2 {
+        font-weight: 700;
+        font-size: rem(24);
+    }
+
+    h3 {
+        font-family: $font-logo;
+        font-weight: 400;
+        font-size:rem(18);
+        @include font_footer;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size:rem(18);
+    }
+
+    h5 {
+        font-family: $font-logo;
+        font-weight: 400;
+        font-size:rem(28);
+    }
+
+    h6 {
+        font-weight: 300;
+        font-size:rem(16);
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 1.5em; /* For accessibility */
+
+        &[class="discovery__subtitle"] {
+            font-size: rem(18);
+            line-height: 1.2em;
+            //color: $grayscale-1;
+            @include font_discovery-subtitle;
+        }
+
+        &[class="explanation__text"] {
+            font-weight: 500;
+            line-height: 1.2em;
+        }
+
+        /* font-size: rem(15.05); */
+    }
+    
+    .menu-restaurants {        
+        [class$="menu-heavy"] {
+            font-size: rem(18);
+            font-weight: 700;
+        }    
+        [class$="menu-thin"] {
+            font-size: rem(15.0431);
+            font-weight: 300;
+        }
+        [class$="price"] {
+            font-size: rem(15.0431);
+            font-weight: 700;
+        }        
+    }   
+}   
+
+span {
+    &[class="explanation__circle"] {
+        //color: $color-font_explanation-circle;
+        @include font-explanation-circle;
+        font-size: rem(12);
+        font-weight: 500;
+    }
+
+}
+
+
+
+a {
+    text-decoration: none;
+    //color: $color-font__main;
+    @include font_main;
+
+    &[class^="auxiliary-menu"] {
+        //color: $color-font__footer;
+        @include font_footer;
+    }   
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+} 
+/* 
+footer {
+    //@include  font_footer;
+} */

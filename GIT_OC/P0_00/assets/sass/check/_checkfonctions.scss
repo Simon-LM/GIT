@@ -1,0 +1,14 @@
+//$check_frame-color: brown purple yellow pink red orange blue green;
+//$check_frame-size: 3 2 1;
+//$check_frame-line: solid dashed dotted;
+
+$check-frame_values: dashed 3 brown , dotted 3 brown , dashed 3 purple , dotted 3 purple , dashed 3 yellow , dotted 3 yellow , dashed 3 pink , dotted 3 pink , dashed 2 red , dotted 2 red , dashed 2 orange , dotted 2 orange , dashed 1 blue , dotted 1 blue , dashed 1 green , dotted 1 green;
+
+@each $line , $size , $color in $check_frame_values {
+    .check-frame_#{$line}_#{$size}_#{$color} {
+        outline:  #{$line} #{$size}+px #{$color};
+    }
+}
+
+
+

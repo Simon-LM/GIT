@@ -1,0 +1,139 @@
+
+
+
+
+
+main {
+    border: solid 1px hsl(300, 100%, 25%);
+}
+  
+@mixin app-background($color) {
+    #{if(&, '&.app-background', '.app-background')} {
+      background-color: $color;
+      color: rgba(#fff, 0.75);
+    }
+  }
+  
+  @include app-background(#036);
+  
+  .sidebar {
+    @include app-background(#c6538c);
+  }
+
+
+
+
+  .animation {
+    animation: vibrate 0.3s linear infinite both;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .animation {
+    animation: none;
+    }
+  }
+
+
+  .contrast {
+    width: 100px;
+    height: 100px;
+    outline: 2px dashed black;
+  }
+  
+  @media (prefers-contrast: more) {
+    .contrast {
+      outline: 2px solid black;
+    }
+  }
+
+
+
+  .day   { background: #eee; color: black; }
+  .night { background: #333; color: white; }
+  
+  @media (prefers-color-scheme: dark) {
+    .day.dark-scheme   { background:  #333; color: white; }
+    .night.dark-scheme { background: black; color:  #ddd; }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .day.light-scheme   { background: white; color:  #555; }
+    .night.light-scheme { background:  #eee; color: black; }
+  }
+  
+  .day, .night {
+    display: inline-block;
+    padding: 1em;
+    width: 7em;
+    height: 2em;
+    vertical-align: middle;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+only
+Applique la mise en forme uniquement si toute la requête correspond. Ce mot-clé est utile pour empêcher 
+les anciens navigateurs d'appliquer les styles en question. 
+Sans utiliser only, les anciens navigateurs interpréteraient la requête screen 
+and (max-width: 500px) comme screen, en ignorant le reste et en appliquant donc le style à tous les écrans.
+Si l'opérateur only est utilisé, il est nécessaire d'indiquer un type de média.
+
+
+Internet Explorer 10 qui implémentait la version display: flexbox avec le préfixe -ms-.
+UC Browser qui prend en charge la version de 2009 avec display: box et avec le préfixe -webkit-.
+
+
+.purple {
+  
+  color: #800080;
+  color: rgb(128, 0, 128);
+
+  color: hsl(300, 100%, 25%);
+  
+}
+
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+
+
+
+  Les éléments HTML non reconnus sont traités par les navigateurs comme des éléments inline anonymes 
+  (véritablement des éléments inline avec aucune valeur sémantiques, similaires aux éléments <span> ). 
+  Vous pouvez toujours vous référez à eux avec leurs noms, et les styler avec du CSS, par exemple — vous 
+  avez juste besoin de vous assurer qu'ils se comportent comme vous le voulez, par exemple configurer 
+  display: block; sur tous les nouveaux éléments sémantiques (comme <article>, <aside>, etc.), 
+  mais seulement sur les vieilles versions d'IE qui ne les reconnaissent pas (donc, IE 8 et plus faible).
+   De cette façon les nouveaux navigateurs peuvent juste utiliser le code normalement, mais les anciennes 
+   versions d'IE seront également capables de styler ces éléments.
+
+
+
+
+
+   <!--[if lte IE 8]>
+   <script src="ie-fix.js"></script>
+   <link href="ie-fix.css" rel="stylesheet" type="text/css">
+ <![endif]-->
+ 
+
+
+
+

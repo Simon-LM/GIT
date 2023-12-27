@@ -1,0 +1,317 @@
+
+/*** MEDIA QUERIES FOR ACCESSIBILITY ***/
+
+// LANDSCAPE OR PORTRAIT //
+
+/* @media (orientation: landscape) {
+  body {
+    // flex-direction: row; 
+  }
+}  
+@media (orientation: portrait) {
+  body {
+    // flex-direction: column; 
+  }
+} */
+
+
+// POINTER //
+
+//none
+//Le mécanisme de saisie principal n'inclut pas de dispositif de pointage.
+
+//coarse
+//Le mécanisme de saisie principal inclut un dispositif de pointage dont la précision est limitée.
+
+//fine
+//Le mécanisme de saisie principal inclut un dispositif de pointage précis.
+  
+@media (pointer: coarse), (any-pointer: coarse) {
+  :focus-visible {
+  outline-width: 0.6rem !important;
+  }
+  .restaurants__heart-like {
+    transform: scale(1.6);
+    &:hover {
+      transform: scale(2);
+    }
+  }
+  .visual-identity__back-arrow a {
+    transform: scale(1.6);
+    &:hover {
+      transform: scale(2);
+    }
+  }    
+}
+
+
+// HOVER //
+
+/* @media (hover: hover) {
+  a:hover {
+    //background: yellow;
+  } 
+}
+@media (any-hover: hover) {
+  a:hover {
+    //background: yellow;
+  } 
+} */
+
+
+// MOTION //
+
+@media (prefers-reduced-motion: reduce) {
+  .if-prefers-reduced-motion, a:hover {
+    animation: none !important;
+    transition: all 0s 0s ease !important;
+    transform: initial  !important;
+    opacity: 1 !important;
+    box-shadow: initial !important;
+    text-shadow: initial !important;
+    i {
+      transform: initial  !important;
+    }    
+  }
+  .explanation__card:hover i {
+    color: $color-icons_explanation-drab !important;
+  } 
+  [class$="underline"] {
+    animation: none !important;
+  }
+}
+
+
+// TRANSPARENCY //
+
+@media (prefers-reduced-transparency) {
+  *:hover, *:focus, *:focus-visible {
+    opacity: 1 !important;
+  } 
+}
+
+
+
+
+//light
+//Cette valeur indique que l'utilisateur a exprimé le choix d'utiliser une interface avec une dominante claire, ou qu'il n'a pas exprimé son choix.
+
+//dark
+//Cette valeur indique que l'utilisateur a exprimé le choix d'utiliser une interface avec une dominante sombre.
+
+
+/* .day   { background: #eee; color: black; }
+.night { background: #333; color: white; } */
+
+//@media (prefers-color-scheme: dark) {
+  /* .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; } */
+
+
+  /* body {
+    color: $color-light-main_dark !important;
+    background: $color-dark-main_dark !important;
+
+    header {
+
+    }
+    main {
+      .discovery {
+        color: $color-light-main_dark !important;
+        background: $color-dark-main_dark !important;
+      }
+      
+      .restaurants {
+        color: $color-light-main_dark !important;
+        background: $color-dark-main_dark !important;
+        &__card-comment {
+          background: $color-light-main_dark !important;
+        }
+        
+      }
+    }
+    footer {
+      color: $color-dark-main_dark !important;
+      background: $color-light-main_dark !important;
+      a {
+        color: $color-dark-main_dark !important;
+      }
+
+
+    }
+
+
+  } */
+
+//}
+
+//@media (prefers-color-scheme: light) {
+  /* .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; } */
+
+ /*  * {
+    color: pink ;
+    background: green;
+  } */
+
+ /*  $color-dark-main: grey; 
+  $color-light-main:pink; */
+
+//}
+
+
+
+
+
+
+// FORCED COLORS //
+
+//none
+//La palette de couleur n'est pas restreinte.
+
+//active
+//La palette de couleur est restreinte et c'est l'agent utilisateur qui fournira la palette utilisable via un système de mots-clés de couleurs CSS systèmes. La valeur de prefers-color-scheme sera également mise à jour afin que les auteurs puissent adapter la page.
+
+//@media (forced-colors: active) {
+//  
+//}
+
+
+
+// CONTRASTE
+
+//no-preference
+//Cette valeur indique que qu'aucune préférence particulière n'a été exprimée. La valeur de ce mot-clé est évaluée à false dans un contexte booléen.
+
+//more
+//Cette valeur indique que le système a été configuré afin d'avoir un contraste plus élevé.
+
+//less
+//Cette valeur indique que le système a été configuré afin d'avoir un niveau de contraste plus faible.
+
+// NOT OPERA (Jun2023)
+//@media (prefers-contrast: more) {
+//  /* .contrast {
+//    outline: 2px solid black;
+//  } */
+//}
+
+
+// WHITE OR BLACK //
+// ONLY WINDOWS
+
+//active
+//Cette valeur indique que les règles suivantes seront appliquées lorsque le système utilise un mode de contraste élevé, quelle que soit la variation de couleurs.
+
+//black-on-white
+//Cette valeur indique que les règles suivantes seront appliquées lorsque le système utilise un mode de contraste élevé avec une dominante noir sur blanc.
+
+//white-on-black
+//Cette valeur indique que les règles suivantes seront appliquées lorsque le système utilise un mode de contraste élevé avec une dominante blanc sur noir.
+
+//@media screen and (-ms-high-contrast: active) {
+//    /* Toutes les règles appliquées en contraste élevé */
+//}
+
+
+//inverted-colors | SAFARI ONLY
+
+//inverted-colors est une caractéristique média CSS (cf. @media) qui indique si l'agent utilisateur ou si le système d'exploitation sous-jacent inverse les couleurs.
+
+//Syntaxe
+//Cette caractéristique est définie avec un des mots-clés parmi ceux qui suivent :
+
+//none
+//Les couleurs sont affichées normalement.
+
+//inverted
+//Les couleurs des pixels de la zone affichée ont été inversées. */
+
+// SAFARI ONLY
+//@media (inverted-colors: inverted) {
+//  /* p {
+//    background: black;
+//    color: yellow;
+//  } */
+//}  
+//@media (inverted-colors: none) {
+// /*  p {
+//    background: #eee;
+//    color: red;
+//  } */
+//}
+
+
+// MONOCHROME //
+ 
+// La caractéristique monochrome est un entier (type <integer>)) dont la valeur correspond au nombre de bits par pixel utilisés pour le tampon d'affichage monochrome de l'appareil. Si l'appareil n'est pas monochrome, cela vaudra 0. Cette caractéristique est une caractéristique d'intervalle ce qui signifie qu'on peut également utiliser les variantes préfixées min-monochrome et max-monochrome afin de cibler les règles en fonction d'un minimum ou d'un maximum.
+
+// Any monochrome device 
+//@media (monochrome) {
+//   /*  p.mono {
+//      display: block;
+//      color: #333;
+//    } */
+//}  
+// Any non-monochrome device 
+//@media (monochrome: 0) {
+// /*  p.no-mono {
+//    display: block;
+//    color: #ee3636;
+//  } */
+//}
+
+
+// COLOR // 
+
+// Tout appareil qui gère des couleurs
+//@media (color) {
+//    /* p {
+//      color: red;
+//    } */
+//}  
+// Tout appareil qui gère des couleurs avec  au moins 8 bits par composante 
+//@media (min-color: 8) {
+// /*  p {
+//    color: #24ba13;
+//  } */
+//}
+
+
+// INDEX COLOR // 
+
+//@media (color-index) {
+// /*  p {
+//    color: red;
+//  } */
+//}
+//@media (min-color-index: 15000) {
+// /*  p {
+//   color: #1475ef;
+//  } */
+//}
+//@media (max-color-index: 15000) {
+//    /*  p {
+//       color: #1475ef;
+//     } */
+//}
+
+// fullscreen
+//Toute la zone d'affichage est utilisée et aucun autre élément d'interface utilisateur (chrome) n'est affiché.	standalone
+
+// standalone
+//L'application se comportera comme une application indépendante avec une fenêtre différente, une icône distincte dans les barres d'application. Dans ce mode, l'agent utilisateur supprimera les éléments d'interface utilisateur liés au contrôle de la navigation mais pourra conserver les autres éléments tels que la barre d'état.	minimal-ui
+
+// minimal-ui
+//L'application se comportera comme une application indépendante mais son interface utilisateur sera restreinte aux contrôles de navigation. Les éléments affichés peuvent varier selon les navigateurs.	browser
+
+// browser
+//L'application ouvre un nouvel onglet dans le navigateur ou une nouvelle fenêtre selon le navigateur et la plateforme utilisés.	Aucun */
+
+///* @media all and (display-mode: fullscreen) {
+//  body {
+//    //margin: 0;
+//    //border: 5px solid black;
+//  }
+//}
+// */

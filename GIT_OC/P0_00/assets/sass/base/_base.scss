@@ -1,0 +1,53 @@
+ 
+* {
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    border: none;
+    outline-offset: 2px;
+    outline-style: solid;
+    outline: 0.2rem solid $color-primairy !important;
+}
+
+html {
+    display: flex;
+    justify-content: center; 
+}
+
+body {
+    @include flex-column;
+    margin: 0;
+    max-width: 1440px;
+    @include background_main;
+}
+
+main {
+    @include flex-column;
+}
+
+img {
+    object-fit: cover;
+    &[class*="heart"], &[src$=".svg"] {
+        background-size: initial;
+    }
+}
+
+input:hover, input:focus, a:hover, a:focus {
+    @include hover-links;
+   
+    &[class$="research"]:hover {
+        cursor: text;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
