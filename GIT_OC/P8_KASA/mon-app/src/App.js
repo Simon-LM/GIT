@@ -1,27 +1,34 @@
-import logo from './logo.svg';
-import './App.scss';
-import Home from './pages/Home';
+// import logo from './logo.svg'
+
+import './App.scss'
+// import Header from './composents/Header/Header'
+import Home from './pages/Home'
+
+// import Error404 from './pages/Error_404/Error_404'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Home />
-        <p>
+      {/* <header className="App-header"> */}
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      {/* <Header /> */}
+      {/* <Error404 /> */}
+      <Home />
+      {/* <Footer /> */}
+      {/* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        </p> */}
+      {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+      {/* </header> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

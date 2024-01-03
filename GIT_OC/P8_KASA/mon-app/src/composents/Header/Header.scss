@@ -1,0 +1,18 @@
+// ul,
+// ol,
+// li {
+//   list-style-type: none;
+// }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  &_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
