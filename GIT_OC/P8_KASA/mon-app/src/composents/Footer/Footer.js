@@ -6,15 +6,8 @@ import './Footer.scss'
 function Footer() {
   return (
     <div className="footer">
-      <img src={whitLogo} className="" alt="logo" />
-      <nav className="footer_menu">
-        <Link className="links links_footer" to="/">
-          Accueil
-        </Link>
-        <Link className="links links_footer" to="/about">
-          À Propos
-        </Link>
-      </nav>
+      <img src={whitLogo} className="footer_logo" alt="logo" />
+      <p>©2020 Kasa. All rights reserved</p>
     </div>
   )
 }

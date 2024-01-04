@@ -1,14 +1,13 @@
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   min-height: 10vh;
+  //   width: 100%;
   color: white;
-  background: grey;
-  &_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
+  background: black;
+  &_logo {
+    max-width: 10%;
   }
 }
