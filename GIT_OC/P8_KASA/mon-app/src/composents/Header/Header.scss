@@ -1,16 +1,14 @@
-// ul,
-// ol,
-// li {
-//   list-style-type: none;
-// }
-
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
-  //   min-height: 10vh;
-  &_menu {
+  // background-color: gainsboro;
+  &__logo {
+    min-width: 10rem;
+    max-width: 18vmin;
+  }
+  &__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

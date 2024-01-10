@@ -1,13 +1,19 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  //   min-height: 10vh;
-  //   width: 100%;
-  color: white;
+  justify-content: space-between;
+  gap: 1rem;
   background: black;
-  &_logo {
-    max-width: 10%;
+  color: white;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  &__logo {
+    min-width: 8rem;
+    max-width: 8vmin;
+  }
+  &__legal-info {
+    margin: 0;
+    max-width: 40vmin;
   }
 }
