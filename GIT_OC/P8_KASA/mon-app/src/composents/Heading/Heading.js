@@ -1,10 +1,10 @@
 import './Heading.scss'
-import imageAbout from '../../assets/images/Image_About.png'
+// import imageAbout from '../../assets/images/Image_About.png'
 
-function Heading() {
+function Heading(props) {
   return (
     <div className="heading">
-      <img src={imageAbout} className="heading__img" alt="logo" />
+      <img src={props.srcImage} className="heading__img" alt="logo" />
     </div>
   )
 }

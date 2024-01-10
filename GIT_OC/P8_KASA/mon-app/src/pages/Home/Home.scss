@@ -1,0 +1,119 @@
+.home {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem 0;
+  &__title {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: black;
+    opacity: 1;
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    // font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    max-width: calc(1440px - 4rem);
+    width: calc(100vw - 4rem);
+    height: 18vmin;
+    margin-top: calc(-18vmin + -0.25rem);
+    &__background {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      opacity: 0.3;
+      //   color: white;
+      //   font-weight: 500;
+      border-radius: 10px;
+      max-width: calc(1440px - 4rem);
+      width: calc(100vw - 4rem);
+      height: 18vmin;
+      margin-top: calc(-18vmin + -0.25rem);
+    }
+  }
+  &__background-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
+    gap: 1rem;
+    max-width: calc(1440px - 8rem);
+    width: calc(100vw - 8rem);
+    padding: 2rem;
+    // padding-left: 1rem;
+    background: #f7f7f7;
+    border-radius: 20px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    // width: clamp(32%, 75vw, 26rem);
+    // min-width: calc((100vw / 3) - 4rem);
+    // max-width: 100%;
+    width: clamp(32%, 18rem, 100%);
+    // width: 26rem;
+    background: #ff6060;
+    border-radius: 10px;
+  }
+}
+
+// /* Chez vous, partout et ailleurs */
+// font-weight: 500;
+// font-size: 48px;
+// font-size: 24px;
+
+// /* .Thumb */
+// position: absolute;
+// left: 4.03%;
+// right: 68.55%;
+// top: 6.76%;
+// bottom: 52.23%;
+
+// /* Img */
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 0%;
+// bottom: 0%;
+// background: #FF6060;
+// border-radius: 10px;
+
+// /* Rectangle 2 */
+// position: absolute;
+// left: 0%;
+// right: 0%;
+// top: 0%;
+// bottom: 0%;
+// background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+// border-radius: 10px;
+
+// /* Titre de la location */
+// position: absolute;
+// left: 5.88%;
+// right: 5.88%;
+// top: 78.82%;
+// bottom: 5.88%;
+// font-family: 'Montserrat';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 18px;
+// line-height: 142.6%;
+// /* or 26px */
+// display: flex;
+// align-items: flex-end;
+// color: #FFFFFF;
+
+// /* Background */
+// background: #F7F7F7;
+// border-radius: 25px;
