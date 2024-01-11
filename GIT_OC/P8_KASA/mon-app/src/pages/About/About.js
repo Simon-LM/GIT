@@ -7,8 +7,12 @@ function About() {
   return (
     <div className="about">
       <Heading srcImage={srcImg} />
-      <h2>À propos</h2>
-      <p>rrr</p>
+      <div className="about__collapses">
+        <div className="about__collapse">Fiabilité</div>
+        <div className="about__collapse">Respect</div>
+        <div className="about__collapse">Service</div>
+        <div className="about__collapse">Sécurité</div>
+      </div>
     </div>
   )
 }
