@@ -21,13 +21,31 @@
     display: flex;
     // flex: auto;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    // justify-content: space-between;
+    align-items: center;
+    text-align: left;
     border-radius: 5px;
-    background: #ff6060;
+    background: #d79c9c;
     color: white;
-    padding: 1rem;
+    padding: 0 1rem;
     width: 80%;
+    &__head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+      background: #ff6060;
+      color: white;
+      padding: 0.25em 1rem;
+      width: 100%;
+    }
+  }
+  &__arrows {
+    &:hover {
+      transform: rotate(-180deg);
+      transition: all 1s ease-in-out;
+    }
   }
 }
 
