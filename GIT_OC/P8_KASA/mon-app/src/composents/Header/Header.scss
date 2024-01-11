@@ -14,4 +14,9 @@
     justify-content: space-between;
     gap: 2rem;
   }
+  &__link {
+    border-radius: 0.2em;
+    height: min-content;
+    padding: 0.2em;
+  }
 }

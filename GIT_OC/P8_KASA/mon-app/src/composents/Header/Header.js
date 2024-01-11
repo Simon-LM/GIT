@@ -9,10 +9,10 @@ function Header() {
     <div className="header">
       <img src={redLogo} className="header__logo" alt="logo" />
       <nav className="header__menu">
-        <Link className="links" to="/">
+        <Link className="header__link links" to="/">
           Accueil
         </Link>
-        <Link className="links" to="/about">
+        <Link className="header__link links" to="/about">
           A Propos
         </Link>
       </nav>

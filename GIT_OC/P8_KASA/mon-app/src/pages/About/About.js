@@ -13,9 +13,11 @@ function About() {
         <div className="about__collapse">
           <div className="about__collapse__head">
             Fiabilité
-            <img className="about__arrows" src={srcArrow} alt="logo" />
+            <button className="about__arrows">
+              <img className="" src={srcArrow} alt="logo" />
+            </button>
           </div>
-          <p>
+          <p className="about__collapse__text">
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
             photos sont conformes aux logements et toutes les informations sont
             régulièrement vérifiées par nos équipes.
@@ -24,9 +26,11 @@ function About() {
         <div className="about__collapse">
           <div className="about__collapse__head">
             Respect
-            <img className="about__arrows" src={srcArrow} alt="logo" />
+            <button className="about__arrows">
+              <img className="" src={srcArrow} alt="logo" />
+            </button>
           </div>
-          <p>
+          <p className="about__collapse__text">
             La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
             entraînera une exclusion de notre platforme.
@@ -35,20 +39,24 @@ function About() {
         <div className="about__collapse">
           <div className="about__collapse__head">
             Service
-            <img className="about__arrows" src={srcArrow} alt="logo" />
+            <button className="about__arrows">
+              <img className="" src={srcArrow} alt="logo" />
+            </button>
           </div>
-          <p>
-            Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-            photos sont conformes aux logements et toutes les informations sont
-            régulièrement vérifiées par nos équipes.
+          <p className="about__collapse__text">
+            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+            comportement discriminatoire ou de perturbation du voisinage
+            entraînera une exclusion de notre platforme.
           </p>
         </div>
         <div className="about__collapse">
           <div className="about__collapse__head">
             Sécurité
-            <img className="about__arrows" src={srcArrow} alt="logo" />
+            <button className="about__arrows">
+              <img className="" src={srcArrow} alt="logo" />
+            </button>
           </div>
-          <p>
+          <p className="about__collapse__text">
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
             pour les voyageurs, chaque logement correspond aux critères de
             sécurité établis par nos services. En laissant une note bien à

@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   display: flex;
+  flex: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,8 @@
   // min-width: calc((100vw / 3) - 4rem);
   // max-width: 100%;
   width: clamp(32%, 18rem, 100%);
-  // width: 26rem;
+  //   width: clamp(32%, (15rem + 5vw), 100%);
+  //   width: clamp(32%, 20vmax, 32rem);
   background: #ff6060;
   border-radius: 10px;
 

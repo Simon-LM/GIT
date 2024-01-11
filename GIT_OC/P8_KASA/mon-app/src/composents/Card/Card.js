@@ -3,7 +3,7 @@ import './Card.scss'
 function Card(props) {
   // const srcImg = imageAbout
   return (
-    <div className="card">
+    <button className="card">
       {/* <img
         className="card__img"
         src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
@@ -18,7 +18,7 @@ function Card(props) {
         title={props.titleImage}
       />
       {/* <p className="card__title">{props.titleImage}</p> */}
-    </div>
+    </button>
   )
 }
 
