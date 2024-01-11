@@ -13,7 +13,7 @@ function Header() {
           Accueil
         </Link>
         <Link className="links" to="/about">
-          À Propos
+          A Propos
         </Link>
       </nav>
     </div>
