@@ -1,10 +1,10 @@
-import whitLogo from '../Footer/Logo_Kasa_whit.png'
-import './Footer.scss'
+import whiteLogo from '../../assets/images/Logo_Kasa_white.png'
+import '../../main.scss'
 
 function Footer() {
   return (
     <div className="footer">
-      <img src={whitLogo} className="footer__logo" alt="logo" />
+      <img src={whiteLogo} className="footer__logo" alt="logo" />
       <p className="footer__legal-info">©2020 Kasa. All rights reserved</p>
     </div>
   )

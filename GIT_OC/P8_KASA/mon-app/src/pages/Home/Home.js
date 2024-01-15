@@ -1,4 +1,4 @@
-import './Home.scss'
+import '../../main.scss'
 import imageHome from '../../assets/images/Image_Home.png'
 import HousingInformations from '../../assets/Datas/Housing_information.json'
 import Heading from '../../composents/Heading/Heading'

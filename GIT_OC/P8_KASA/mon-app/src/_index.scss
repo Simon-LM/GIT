@@ -1,25 +1,18 @@
+// // //  Default settings
 body {
   max-width: 1440px;
   min-height: 100vh;
   margin: 0;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2rem;
-  color: #ff6060;
+  color: $main-font-color;
 }
 p {
   line-height: 1.5rem;
 }
-// div div {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 button {
   border: none;
   outline: none;
@@ -30,37 +23,28 @@ button {
     opacity: 0.8;
   }
 }
-
 .links {
   text-decoration-line: none;
-  color: #ff6060;
+  color: $main-font-color;
   cursor: pointer;
   &:visited {
-    color: #ff6060;
+    color: $main-font-color;
   }
   &:hover,
   :focus {
     text-decoration-line: underline;
     opacity: 0.8;
   }
-  // text-decoration-line: none;
-  // color: #ff6060;
-
   &_footer {
-    color: white;
+    color: $secondary-font-color;
     &:visited {
-      color: white;
+      color: $secondary-font-color;
     }
   }
 }
 *:focus-visible {
-  outline-color: #ff6060;
+  outline-color: $main-font-color;
   outline-style: solid;
   outline-width: 4px;
   outline-offset: 2px;
 }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }

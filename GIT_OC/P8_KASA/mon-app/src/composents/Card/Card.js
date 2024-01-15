@@ -1,4 +1,4 @@
-import './Card.scss'
+import '../../main.scss'
 
 function Card(props) {
   // const srcImg = imageAbout

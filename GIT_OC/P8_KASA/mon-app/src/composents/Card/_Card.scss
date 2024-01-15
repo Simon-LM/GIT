@@ -2,18 +2,15 @@
   position: relative;
   z-index: 1;
   display: flex;
-  flex: auto;
-  flex-direction: column;
+  flex-flow: column wrap;
+  //   flex: 18rem 1 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20rem;
   justify-content: center;
   align-items: center;
-  color: white;
-  // width: clamp(32%, 75vw, 26rem);
-  // min-width: calc((100vw / 3) - 4rem);
-  // max-width: 100%;
-  width: clamp(32%, 18rem, 100%);
-  //   width: clamp(32%, (15rem + 5vw), 100%);
-  //   width: clamp(32%, 20vmax, 32rem);
-  background: #ff6060;
+  color: $secondary-font-color;
+  //   width: clamp(32%, 18rem, 100%);
   border-radius: 10px;
 
   &__img {
@@ -23,7 +20,7 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    background: #ff6060;
+    background: $main-color;
     height: 100%;
     border-radius: 10px;
   }
@@ -36,7 +33,7 @@
     display: flex;
     text-align: left;
     text-align-last: left;
-    background: transparentize($color: #ff6060, $amount: 0.1);
+    background: transparentize($color: $main-color, $amount: 0.1);
     border-radius: 0.5em;
     font-family: 'Montserrat';
     font-size: 0.8rem;

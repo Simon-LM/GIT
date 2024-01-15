@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background: black;
-  color: white;
+  background: $footer-background-color;
+  color: $main-font-color;
   padding: 2rem;
   padding-bottom: 1rem;
   &__logo {

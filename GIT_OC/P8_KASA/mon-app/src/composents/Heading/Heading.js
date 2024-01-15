@@ -1,4 +1,4 @@
-import './Heading.scss'
+import '../../main.scss'
 // import imageAbout from '../../assets/images/Image_About.png'
 
 function Heading(props) {

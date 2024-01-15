@@ -1,5 +1,7 @@
 import Heading from '../../composents/Heading/Heading'
-import './About.scss'
+import '../../main.scss'
+// import '../../color-variables.scss'
+
 import imageAbout from '../../assets/images/Image_About.png'
 import imageArrow from '../../assets/images/arrow_about.svg'
 
