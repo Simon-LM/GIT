@@ -7,17 +7,19 @@ function Collapse({ title, content, className }) {
   const handleToggle = () => {
     setIsOpen(!isOpen)
   }
-
   return (
     <div className={`collapse ${className}`}>
       <div className={`collapse__title ${className}-title`}>
         <span>{title}</span>
-        <button className={`collapse__img`}>
+        <button
+          onClick={handleToggle}
+          className={`collapse__arrow ${isOpen ? 'rotate' : ''}`}
+        >
           <img
             src={arrowIcon}
             alt="flèche pour ouvrir"
-            onClick={handleToggle}
-            className={`collapse__img ${isOpen ? 'rotate' : ''}`}
+            // onClick={handleToggle}
+            className={`collapse__img`}
           />
         </button>
       </div>
@@ -31,5 +33,4 @@ function Collapse({ title, content, className }) {
     </div>
   )
 }
-
 export default Collapse

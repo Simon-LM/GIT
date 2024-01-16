@@ -17,26 +17,35 @@
     padding: 0.25em 1rem;
     width: 100%;
   }
-  &__img {
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0 0.1rem;
     border-radius: 100%;
     background: $main-color;
-    &:focus-visible {
-      caret-color: transparent;
-      outline: 3px solid $main-font-color;
-      outline-offset: 0;
-    }
     transform-origin: center;
     transition: transform 0.75s ease-out;
     width: 2rem;
     height: 2rem;
+    caret-color: transparent;
+    &:focus-visible {
+      caret-color: transparent;
+      outline: 3px solid $secondary-font-color;
+      outline-offset: 0;
+    }
     &.rotate {
       transform: rotate(-180deg);
     }
   }
-  &__img.rotate {
+  &__arrow.rotate {
     transform: rotate(-180deg);
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__content {
     position: relative;

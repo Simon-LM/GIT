@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-// import redLogo from '../Header/Logo_Kasa_red.png'a
 import redLogo from '../../assets/images/Logo_Kasa_red.png'
 import '../../main.scss'
 
