@@ -1,5 +1,10 @@
 import './main.scss'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom'
 
 import Header from './composents/Header/Header'
 import Home from './pages/Home/Home'
@@ -15,8 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/error404" />} />
           <Route path="/error404" element={<Error404 />} />
-          <Route path="*" element={<Error404 />} />
           <Route path="/about" element={<About />} />
           <Route path="/housinginformation" element={<HousingInfo />} />
         </Routes>
