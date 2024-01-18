@@ -1,4 +1,4 @@
-import './main.scss'
+import './App.scss'
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +10,7 @@ import Header from './composents/Header/Header'
 import Home from './pages/Home/Home'
 import Footer from './composents/Footer/Footer'
 import About from './pages/About/About'
-import HousingInfo from './pages/Housing_information'
+// import HousingInfo from './pages/Housing_information'
 import Error404 from './pages/Error_404/Error_404'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="*" element={<Navigate to="/error404" />} />
           <Route path="/error404" element={<Error404 />} />
           <Route path="/about" element={<About />} />
-          <Route path="/housinginformation" element={<HousingInfo />} />
+          {/* <Route path="/housinginformation" element={<HousingInfo />} /> */}
         </Routes>
         <Footer />
       </main>

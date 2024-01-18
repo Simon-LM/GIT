@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import redLogo from '../../assets/images/Logo_Kasa_red.png'
-import '../../main.scss'
+import './Header.scss'
 
 function Header() {
   return (

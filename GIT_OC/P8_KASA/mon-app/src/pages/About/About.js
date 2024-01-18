@@ -1,6 +1,7 @@
 import Heading from '../../composents/Heading/Heading'
 import Collapse from '../../composents/Collapse/Collapse'
-import '../../main.scss'
+// import '../../main.scss'
+import './About.scss'
 import imageAbout from '../../assets/images/Image_About.png'
 
 function About() {
