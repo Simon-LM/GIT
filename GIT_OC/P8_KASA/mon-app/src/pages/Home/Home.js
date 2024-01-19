@@ -1,8 +1,8 @@
 import './Home.scss'
 import imageHome from '../../assets/images/Image_Home.png'
 import HousingInformations from '../../assets/Datas/Housing_information.json'
-import Heading from '../../composents/Heading/Heading'
-import Card from '../../composents/Card/Card'
+import Heading from '../../components/Heading/Heading'
+import Card from '../../components/Card/Card'
 
 function Home() {
   const srcImgHeading = imageHome
@@ -24,6 +24,7 @@ function Home() {
 
         {srcImgCard.map((card) => (
           <Card
+            link={card.id}
             key={card.id}
             srcImage={card.cover}
             titleImage={card.title}

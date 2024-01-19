@@ -1,0 +1,19 @@
+@import '../../variables/variables';
+
+.owner {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1rem;
+  width: 10rem;
+  // outline: 3px solid blue;
+  &__name {
+    color: $main-font-color;
+    text-align: right;
+  }
+  &__picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+  }
+}

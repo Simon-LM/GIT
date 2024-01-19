@@ -6,7 +6,6 @@
   text-align: left;
   border-radius: 0.5rem;
   color: $main-font-color;
-  padding: 0 1rem;
   &__title {
     display: flex;
     flex-direction: row;
@@ -74,5 +73,10 @@
   width: 80%;
 }
 .collapse--apartement {
-  width: 40%;
+  display: flex;
+  flex: auto;
+  flex-basis: 15rem;
+  width: min-content;
+  padding: 0 1rem;
+  // outline: 5px solid peru;
 }

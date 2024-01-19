@@ -6,11 +6,11 @@ import {
   Navigate,
 } from 'react-router-dom'
 
-import Header from './composents/Header/Header'
+import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
-import Footer from './composents/Footer/Footer'
+import Footer from './components/Footer/Footer'
 import About from './pages/About/About'
-// import HousingInfo from './pages/Housing_information'
+import HousingInfo from './pages/Housing_pages/Housing_pages'
 import Error404 from './pages/Error_404/Error_404'
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
           <Route path="*" element={<Navigate to="/error404" />} />
           <Route path="/error404" element={<Error404 />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/housinginformation" element={<HousingInfo />} /> */}
+          {/* <Route path="/housing_info" element={<HousingInfo />} /> */}
+          <Route path="/property/:id" element={<HousingInfo />} />
         </Routes>
         <Footer />
       </main>

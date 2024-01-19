@@ -1,0 +1,58 @@
+@import '../../variables/variables';
+.housing-pages {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  &__specifics {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    flex-basis: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 2rem 0;
+    // outline: 3px dashed red;
+  }
+  &__owner {
+    display: flex;
+    flex: auto;
+    flex-flow: row-reverse wrap;
+    flex-basis: 0;
+    flex-shrink: 2;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    // outline: 6px dotted yellowgreen;
+    &__rating {
+      display: flex;
+      width: min-content;
+      // outline: 3px solid blueviolet;
+    }
+  }
+  &__collapses {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    // outline: 3px solid blue;
+  }
+}
+.equipment {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  // outline: 3px solid green;
+  &__item {
+    display: flex;
+    padding: 0.25rem 0;
+    // outline: 3px solid yellowgreen;
+  }
+}
