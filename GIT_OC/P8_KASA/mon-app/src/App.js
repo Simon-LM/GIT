@@ -23,7 +23,6 @@ function App() {
           <Route path="*" element={<Navigate to="/error404" />} />
           <Route path="/error404" element={<Error404 />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/housing_info" element={<HousingInfo />} /> */}
           <Route path="/property/:id" element={<HousingInfo />} />
         </Routes>
         <Footer />

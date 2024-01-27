@@ -37,7 +37,6 @@ function HousingInfo() {
         />
         <Collapse
           title="Equipments"
-          // content={property.description}
           content={
             <ul className="equipment">
               {property.equipments.map((equipment, index) => (

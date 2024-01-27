@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 import redLogo from '../../assets/images/Logo_Kasa_red.png'
 import './Header.scss'
 
