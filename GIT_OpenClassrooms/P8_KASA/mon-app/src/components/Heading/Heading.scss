@@ -1,0 +1,10 @@
+.heading {
+  &__img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+    max-width: calc(1440px - 4rem);
+    width: calc(100vw - 4rem);
+    height: 18vmin;
+    // outline: solid 2px blue;
+  }
+}

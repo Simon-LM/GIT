@@ -1,0 +1,61 @@
+@import '../../variables/variables';
+.home {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem 0;
+  &__title {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    color: whit$main-font-color;
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    max-width: calc(1440px - 4rem);
+    width: calc(100vw - 4rem);
+    height: 18vmin;
+    margin-top: calc(-18vmin + -0.25rem);
+    &__background {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: dimgray;
+      opacity: 0.2;
+      border-radius: 10px;
+      max-width: calc(1440px - 4rem);
+      width: calc(100vw - 4rem);
+      height: 18vmin;
+      margin-top: calc(-18vmin + -0.25rem);
+    }
+  }
+  &__background-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
+    gap: 1rem;
+    max-width: calc(1440px - 8rem);
+    width: calc(100vw - 8rem);
+    padding: 2rem;
+    background: cards-background-color;
+    border-radius: 20px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $main-font-color;
+    width: clamp(32%, 18rem, 100%);
+    background: $main-color;
+    border-radius: 10px;
+  }
+}

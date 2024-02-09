@@ -1,0 +1,19 @@
+.about {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  &__collapses {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: calc(1440px - 4rem);
+    width: calc(100vw - 4rem);
+    gap: 2rem;
+  }
+}

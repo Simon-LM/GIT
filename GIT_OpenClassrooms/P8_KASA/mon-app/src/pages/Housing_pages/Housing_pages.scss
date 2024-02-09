@@ -1,0 +1,54 @@
+@import '../../variables/variables';
+.housing-pages {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  &__specifics {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    flex-basis: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 1rem;
+    overflow: scroll;
+  }
+  &__owner {
+    display: flex;
+    flex: auto;
+    flex-flow: row-reverse wrap;
+    flex-basis: 0;
+    flex-shrink: 2;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    &__rating {
+      display: flex;
+      width: min-content;
+    }
+  }
+  &__collapses {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.equipment {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  &__item {
+    display: flex;
+    padding: 0.25rem 0;
+  }
+}
