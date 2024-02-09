@@ -1,0 +1,41 @@
+@import '../../variables/variables';
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  color: $secondary-font-color;
+  &__img {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: $main-color;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+  &__title {
+    position: absolute;
+    z-index: 2;
+    left: 1rem;
+    bottom: 0;
+    max-width: 66%;
+    display: flex;
+    text-align: left;
+    text-align-last: left;
+    background: transparentize($color: $main-color, $amount: 0.1);
+    border-radius: 0.5em;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    line-height: 1.25em;
+    padding: 0.25em 0.5em;
+  }
+}
