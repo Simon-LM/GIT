@@ -13,7 +13,9 @@
     justify-content: space-between;
     margin: 2rem 0;
     gap: 1rem;
-    overflow: scroll;
+    // overflow: scroll;
+    // overflow: hidden;
+    // background: lightblue;
   }
   &__owner {
     display: flex;

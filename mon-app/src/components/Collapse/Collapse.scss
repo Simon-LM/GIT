@@ -51,6 +51,7 @@
     position: relative;
     z-index: -1;
     width: 100%;
+    max-height: 0;
     background-color: $cards-background-color;
     color: $main-font-color;
     border-radius: 0 0 0.5rem 0.5rem;
@@ -63,7 +64,8 @@
     align-items: flex-start;
     transition: all 0.5s ease-in-out;
   }
-  &__content.open {
+  &__content.is-open {
+    max-height: initial;
     visibility: visible;
     opacity: 1;
     transition: all 1s ease-in-out;

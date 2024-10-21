@@ -25,7 +25,7 @@ function Collapse({ title, content, className }) {
       </div>
       <div
         className={`collapse__content ${className}-content ${
-          isOpen ? 'open' : ''
+          isOpen ? 'is-open' : ''
         }`}
       >
         {content}
