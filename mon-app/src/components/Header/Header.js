@@ -5,7 +5,7 @@ import './Header.scss'
 function Header() {
   return (
     <div className="header">
-      <img src={redLogo} className="header__logo" alt="logo" />
+      <img src={redLogo} className="header__logo" alt="Kasa" />
       <nav className="header__menu">
         <Link className="header__link links" to="/">
           Accueil
