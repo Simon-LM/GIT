@@ -18,7 +18,6 @@ function Collapse({ title, content, className }) {
           <img
             src={arrowIcon}
             alt="flèche pour ouvrir"
-            // onClick={handleToggle}
             className={`collapse__img`}
           />
         </button>

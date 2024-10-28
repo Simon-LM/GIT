@@ -18,7 +18,7 @@ function Home() {
             link={card.id}
             key={card.id}
             srcImage={card.cover}
-            // titleImage={card.title}
+            titleImage={card.title}
             altImage={card.title}
           />
         ))}

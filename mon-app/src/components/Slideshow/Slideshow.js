@@ -4,15 +4,12 @@ import slideShowArrow from '../../assets/Icons/Vector.svg'
 
 const Slideshow = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0)
-
   const nextSlide = () => {
     setCurrentSlide((currentSlide + 1) % images.length)
   }
-
   const prevSlide = () => {
     setCurrentSlide((currentSlide - 1 + images.length) % images.length)
   }
-
   if (images.length === 0) return null
 
   return (
@@ -46,5 +43,4 @@ const Slideshow = ({ images }) => {
     </div>
   )
 }
-
 export default Slideshow
