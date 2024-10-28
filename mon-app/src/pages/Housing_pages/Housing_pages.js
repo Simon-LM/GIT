@@ -5,7 +5,6 @@ import Rating from '../../components/Rating/Rating'
 import Owner from '../../components/Owner/Owner'
 import Property from '../../components/Property/Property'
 import Collapse from '../../components/Collapse/Collapse'
-import './Housing_pages.scss'
 
 function HousingInfo() {
   const { id } = useParams()

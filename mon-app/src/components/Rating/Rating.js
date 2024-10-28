@@ -1,4 +1,3 @@
-import './Rating.scss'
 import starRed from '../../assets/Icons/star.svg'
 import starGrey from '../../assets/Icons/Star_Grey.svg'
 

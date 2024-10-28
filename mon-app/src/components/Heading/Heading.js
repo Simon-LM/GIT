@@ -1,5 +1,3 @@
-import './Heading.scss'
-
 function Heading(props) {
   return (
     <div className="heading">

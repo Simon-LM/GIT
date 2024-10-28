@@ -1,5 +1,3 @@
-import './Property.scss'
-
 const Property = ({ property }) => {
   return (
     <div className="property">

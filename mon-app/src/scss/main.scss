@@ -1,0 +1,37 @@
+// main.scss
+
+// Import theme styles
+@import 'themes/Theme';
+
+// Import base styles
+@import 'base/Base';
+@import 'base/Typography';
+
+// Import layout styles
+@import 'layout/Header';
+@import 'layout/Footer';
+@import 'layout/Heading';
+
+// Import component styles
+@import 'components/Slideshow';
+@import 'components/Cards';
+@import 'components/Collapse';
+@import 'components/Owner';
+@import 'components/Property';
+@import 'components/Rating';
+@import 'components/Buttons';
+
+// Import page styles
+@import 'pages/Home';
+@import 'pages/About';
+@import 'pages/Error_404';
+@import 'pages/Housing_pages';
+
+// Import utility styles
+// @import 'utils/variables';
+// @import 'utils/mixins';
+// @import 'utils/functions';
+
+// Import vendor styles
+// @import 'vendors/bootstrap';
+// @import 'vendors/normalize';

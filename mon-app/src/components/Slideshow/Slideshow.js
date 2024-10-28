@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './Slideshow.scss'
 import slideShowArrow from '../../assets/Icons/Vector.svg'
 
 const Slideshow = ({ images }) => {

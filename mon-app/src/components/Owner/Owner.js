@@ -1,5 +1,3 @@
-import './Owner.scss'
-
 const Owner = ({ host }) => {
   const [firstName, lastName] = host.name.split(' ')
 
